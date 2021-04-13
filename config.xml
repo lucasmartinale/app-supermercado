@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.lucas.hello" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Supermercado De Leon</name>
+    <description>
+        Aplicacion de comercio electronico para compras del supermercado
+    </description>
+    <author email="lucas_m_ale@hotmail.com" href="">
+        Lucas Ale, Guadalupe Anzoategui
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+          <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+        <allow-navigation href="*" />
+      <application android:usesCleartextTraffic="true" />
+  </edit-config>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+       <icon src="www\img\logo.png" platform="android" width="16" height="16" density="mdpi" />
+</widget>
